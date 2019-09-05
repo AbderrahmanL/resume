@@ -46,7 +46,6 @@
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
 	{\sffamily\Huge Abderrahman Lahiaouni}\\\medskip % Your name
-	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
 }
 
 
@@ -57,7 +56,7 @@
 
 \section{Summary}
 
-{\raggedright\textbf{``Research and development engineer, graduated from an engineering school in a well known university, experience extends from IT consulting to research, relevant technical skills as well as communication skills working in positions involving marketing and public relations as well as traveling. \\ Fast learner, excited to see new things, with a strong sense of commitment, fellowship and cheerfulness"} 10--06--2019\\\medskip}
+{\raggedright\textbf{``Research and development engineer, graduated from an engineering school, experience extends from IT consulting to research, relevant technical skills as well as communication skills working in positions involving marketing and public relations as well as traveling. Fast learner, excited to see new things, with a strong sense of commitment, fellowship and cheerfulness"} \medskip}
 
 
 \medskip % Extra whitespace before the next section
@@ -82,9 +81,9 @@
 
 \workposition{Current, since Dec 2018} % Duration
 {FT} % FT/PT (full time or part time)
-{Institut National de Recherche en Informatique et en\\Automatique lille} % Employer
-{Research and development engineer} % Job title
-{Currently working on a project that aims to push the boundaries of formal verification of large complex software systems described with formal specification languages by leveraging Grid5000 research infrastructure capabilities, by making big SAT problems that are slow to solve locally, deployable remotely in the Grid5000, and provide convenient result retrieval and reporting, a portal will handle requests by making reservations, configuring and deploying clusters automatically using Ansible, Kubernetes and Docker Machine, running jobs, storing results in a Ceph cluster making them available to the client} % Description
+{Institut National de Recherche en Informatique et en\\Automatique (INRIA) -- Lille} % Employer
+{Research and development engineer -- Spirals} % Job title
+{Current project aims to make formal verification of large complex software systems described with formal specification languages doable on a larger scale, by leveraging Grid5000 research infrastructure, making big SAT problems that are slow to solve locally, deployable remotely, with convenient result retrieval and reporting. \\Project tasks involve:\hspace{1mm} Restful api specs.\hspace{1mm} A containerized server in Go that will do the reservation, configuration and deployment of clusters automatically using Docker Machine, Ansible and Kubernetes, also also monitor running jobs, send back and archive results in a Ceph storage cluster.\hspace{1mm} Assemble the server with Nginx reverse proxy, and an internal VPN using Docker Compose.\hspace{1mm} A java client integrated with MIT's Alloy Analyzer open-source tool.\hspace{1mm} Experiments, scalability tests, Improvements based on collaboration and feedback from researchers involved.} % Description
 
 
 %------------------------------------------------
@@ -92,9 +91,9 @@
 
 \workposition{Mai 2018 -- nov 2018} % Duration
 {FT} % FT/PT (full time or part time)
-{Institut National de Recherche en Informatique et en\\Automatique lille} % Employer
-{Intern for Final Project assignment} % Job title
-{As part of the spirals team, my team is particularly interested in introducing more automation in the adaptation mechanisms of software systems. I worked on a project about cloud storage, more specifically on load balancing and data replication. The focus was on practical outcomes concerning data popularity, network traffic and available capacity, and how they could be the factors to route requests, to decide when, what data, and where to  place replicas to ensure data availability and optimize resource usage.} % Description
+{INRIA -- Lille} % Employer
+{Intern for Graduation Project -- Spirals} % Job title
+{As part of the spirals team, --particularly interested in introducing more automation in the adaptation mechanisms of software systems-- I worked on a project focused on cloud storage, more specifically on load balancing and data replication aspects. The emphasis was on practical outcomes concerning data popularity, network traffic and available resources, and how they could be the deciding factors to route requests, or to know when, what data to replicate, and where to place replicas to ensure data availability and optimize resource usage.} % Description
 
 %------------------------------------------------
 \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
@@ -103,7 +102,7 @@
 {FT} % FT/PT (full time or part time)
 {Algo Consulting group} % Employer
 {Summer internship} % Job title
-{First experience in professional environment. The transition required an initial learning curve acquiring .NET, Xamarin.Forms, and understanding agile project management, i was part of one of the production teams which wasn't an option for summer interns, integrated an ongoing project as a part of the dev-ops team thanks to willingness to learn, quick adaptation and mostly the manager and seniors great support. We used Microsoft Azure to host production databases and deploy services, adopting SCRUM framework. I was mainly in charge of building UI for business logic, and for fixing problems we get from testing engineers reports and clients feedback between sprints.}  % Description
+{First experience in a professional environment. After insisting to be part of an on-going project, I was briefed on the project, a customer survey mobile app, and agile project management (SCRUM). I was given 3 days to acquire .NET, Xamarin.Forms, and write the main page of the app, which I did and became part of the team. \\ Tasks involved writing logic and UI using C\# and XAML and, fixing bugs, participating in meetings, applying changes based on clients feedback after each sprint, using Microsoft Azure to host production databases and deploy services.}  % Description
 
 %------------------------------------------------
 
@@ -173,21 +172,6 @@
 
 \end{supertabular}
 
-%----------------------------------------------------------------------------------------
-%	FORMATIONS
-%----------------------------------------------------------------------------------------
-
-\section{TRAINING}
-
-% Example \longformdescription{} command to add another section:
-
-%\longformdescription{Heading}{Description}
-
-%------------------------------------------------
-
-\textbf{Test Driven Development -- INRIA Lille }\\{Introduction and live programming using python, pytest, and mock}
-
-\textbf{Data mining -- ENSA Marrakech}\\{Introduction and workshop using weka}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS
@@ -205,23 +189,28 @@
 %------------------------------------------------
 
 \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
 	%------------------------------------------------
-	
+	\tableentry{Languages}{JAVA, SQL, C/C++}{}
+	\tableentry{}{Golang, Python, C\# }{}
+	\tableentry{}{HTML, CSS, PHP, JavaScript}{}
+
+	%------------------------------------------------
 	\tableentry{Tools}{Docker, Kubernetes, Ansible}{}
-
-
-	\tableentry{}{ssh, openSSL, bash}{}
-	\tableentry{}{maven, git, gitlab ci}{}
+	\tableentry{}{Nginx, apache, ssh, openSSL, bash}{}
+	\tableentry{}{maven, gradle, git, gitlab ci}{}
+	\tableentry{}{jenkins, Nexus}{}
 	\tableentry{}{OpenAPI Swagger}{spaceafter}
-	%------------------------------------------------
-	\tableentry{Programming}{JavaSE, Android SDK, SQL}{}
-	\tableentry{}{JavaEE, .Net Standard Library}{}
-	\tableentry{}{Golang, Javascript, Python, Php, C}{}
-	\tableentry{}{C++}{spaceafter} 
 	
 	%------------------------------------------------
+	\tableentry{Certifications}{Test driven development using}{}
+	\tableentry{}{ python, pytest, and mock}{spaceafter}
+	%------------------------------------------------
+	\tableentry{Other skills}{Server administration}{}
+	\tableentry{}{proxy, vpn, certificates}{}
+	\tableentry{}{Tracking and isolating problems}{spaceafter}
 	
+	%------------------------------------------------
+
 \end{supertabular}
 
 
@@ -243,17 +232,14 @@
 \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 	
 	%------------------------------------------------
-	\tableentry{School events}{Intervention -- More Intelligent Web}{}
-
-	\tableentry{}{Software engineer day -- 2017}{}
-	
-	\tableentry{}{Workshop --  .Net boot-camp}{}
-	\tableentry{}{Workshop -- Microservices design}{}
-	\tableentry{}{Workshop -- The Blockchain}{spaceafter}
+	\tableentry{Talks}{ More Intelligent Web 3.0}{}
+	\tableentry{}{ Microservices and OOP principles}{spaceafter}
+	\tableentry{Workshop }{ .Net intro}{}
+	\tableentry{}{The Blockchain}{spaceafter}
 	
 	%------------------------------------------------
 		
-	\tableentry{Languages}{Arabic native language}{}
+	\tableentry{Languages}{Arabic}{}
 	\tableentry{}{French}{}
 	\tableentry{}{English}{spaceafter}
 	
@@ -274,9 +260,9 @@
 
 %------------------------------------------------
 
-\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgment to immediately act based on consensus to achieve goals quickly and efficiently.}
+\longformdescription{Goal Oriented}{I believe in action over long-winded discussions, listen to everyone's viewpoints then draw a judgment based on reached consensus to immediately act and achieve goals quickly and efficiently.}
 
-\longformdescription{Passionate}{I have been interested in computer sciences from an early age. Education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental and technical aspects in IT with practical and useful applications.}
+\longformdescription{Passionate}{I have been interested in computer sciences from an early age. Academic and professional experiences have cemented this interest into a passion. I greatly enjoy carrying out fundamental and technical aspects in IT with practical and useful applications.}
 
 
 
