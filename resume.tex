@@ -1,0 +1,281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Abderrahman Lahiaouni}\\\medskip % Your name
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+
+{\raggedright\textbf{``Research and development engineer, graduated from an engineering school, experience extends from IT consulting to research, relevant technical skills as well as communication skills working in positions involving marketing and public relations as well as traveling. Fast learner, excited to see new things, with a strong sense of commitment, fellowship and cheerfulness"} \medskip}
+
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, since Dec 2018} % Duration
+{FT} % FT/PT (full time or part time)
+{Institut National de Recherche en Informatique et en\\Automatique (INRIA) -- Lille} % Employer
+{Research and development engineer -- Spirals} % Job title
+{Current project aims to make formal verification of large complex software systems described with formal specification languages doable on a larger scale, by leveraging Grid5000 research infrastructure, making big SAT problems that are slow to solve locally, deployable remotely, with convenient result retrieval and reporting. \\Project tasks involve:\hspace{1mm} Restful api specs.\hspace{1mm} A containerized server in Go that will do the reservation, configuration and deployment of clusters automatically using Docker Machine, Ansible and Kubernetes, also also monitor running jobs, send back and archive results in a Ceph storage cluster.\hspace{1mm} Assemble the server with Nginx reverse proxy, and an internal VPN using Docker Compose.\hspace{1mm} A java client integrated with MIT's Alloy Analyzer open-source tool.\hspace{1mm} Experiments, scalability tests, Improvements based on collaboration and feedback from researchers.} % Description
+
+
+%------------------------------------------------
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\workposition{Mai 2018 -- nov 2018} % Duration
+{FT} % FT/PT (full time or part time)
+{INRIA -- Lille} % Employer
+{Intern for Graduation Project -- Spirals} % Job title
+{As part of the spirals team, --particularly interested in introducing more automation in the adaptation mechanisms of software systems-- I worked on a project focused on cloud storage, more specifically on load balancing and data replication aspects. The emphasis was on practical outcomes concerning data popularity, network traffic and available resources, and how they could be the deciding factors to route requests, or to know when, what data to replicate, and where to place replicas to ensure data availability and optimize resource usage.} % Description
+
+%------------------------------------------------
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\workposition{Jul 2017 -- sep 2017} % Duration
+{FT} % FT/PT (full time or part time)
+{Algo Consulting group} % Employer
+{Summer internship} % Job title
+{First experience in a professional environment. I worked on a customer survey mobile application. I was given 3 days to acquire basics of .NET, Xamarin.Forms and make a first prototype of the app, which I did and became part of the production team. \\ Tasks involved writing logic and UI using C\# and XAML, plus fixing bugs, participating in meetings, applying changes based on clients feedback after each sprint, using Microsoft Azure to host production databases and deploy services, testing and delivering the application continuously (\href{https://play.google.com/store/apps/details?id=ma.ram.customersurvey\&hl=en}{Mystery Shopper})}  % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\medskip % Extra whitespace before the next section
+
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is alignedfaUser
+			\raisebox{-1pt}{\faUser} & single, 25yo\\ % Address
+			\raisebox{-1pt}{\faHome} & 81 bis Boulevard Montebello 59000 Lille France \\ % Address
+			\raisebox{-1pt}{\faPhone} & +33 6 24 94 37 58 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:lahiaouni.abd@gmail.com}{lahiaouni.abd@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/lahiaouni-abderrahman/}{https://www.linkedin.com/in/lahiaouni-abderrahman/} \\ % LinkedIn profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://github.com/AbderrahmanL}{https://github.com/AbderrahmanL} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	
+	%------------------------------------------------
+	
+	\educationentry{2013 -- 2018} % Duration
+	{Engineer degree} % Degree
+	{Software Engineering} % Department
+	{National School of Applied Sciences} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{2012} % Duration
+	{baccalaureate} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Department of Math} % Department
+	{Rahaly El Farouq High school} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Full-stack}{Spring boot, Vue.js, bootstrap}{}
+	
+	%------------------------------------------------
+	\tableentry{Devops}{Docker, Kubernetes, Ansible}{}
+	\tableentry{}{maven, jenkins, gradle}{}
+	\tableentry{}{git, github, gitlab-ci, Azure Devops}{}
+	
+	%------------------------------------------------
+	\tableentry{Languages}{Java, Sql, c/c++}{}
+	\tableentry{}{Golang, Python, c\# }{}
+	\tableentry{}{html5, css, PHP, JavaScript}{}
+	
+	%------------------------------------------------
+	\tableentry{OS}{Debian, CentOS, Arch}{}
+	\tableentry{}{Windows, OS X}{}
+	
+	%------------------------------------------------
+	\tableentry{DB}{PostgreSQL, Oracle, Mysql}{}
+	
+	%------------------------------------------------
+	\tableentry{Certifications}{Test driven development using}{}
+	\tableentry{}{ python, pytest, and mock}{spaceafter}
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	\tableentry{Talks}{ More Intelligent Web 3.0}{}
+	\tableentry{}{ Microservices and OOP principles}{spaceafter}
+	\tableentry{Workshops }{ .Net intro}{}
+	\tableentry{}{The Blockchain}{spaceafter}
+	
+	%------------------------------------------------
+		
+	\tableentry{Languages}{Arabic}{}
+	\tableentry{}{French}{}
+	\tableentry{}{English}{spaceafter}
+	
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Personal Attributes}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\longformdescription{Goal Oriented}{I believe in action over long-winded discussions, listen to everyone's viewpoints then draw a judgment based on reached consensus to immediately act and achieve goals quickly and efficiently.}
+
+\longformdescription{Passionate}{I have been interested in computer sciences from an early age. Academic and professional experiences have cemented this interest into a passion. I greatly enjoy carrying out fundamental and technical aspects in IT with practical and useful applications.}
+
+
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
